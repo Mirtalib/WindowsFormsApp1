@@ -27,9 +27,15 @@ namespace WindowsFormsApp1.Presenters
         private void UpdateVeiw_SaveEvent(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(updateVeiw.FirstName) || updateVeiw.FirstName.Length < 3)
+            {
                 MessageBox.Show("FirstName Wrong");
+                return;
+            }
             if (string.IsNullOrWhiteSpace(updateVeiw.LastName) || updateVeiw.LastName.Length < 3)
+            {
                 MessageBox.Show("LastName Wrong");
+                return;
+            }
             ((Form)updateVeiw).DialogResult = DialogResult.OK;
         }
     }

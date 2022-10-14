@@ -30,8 +30,8 @@ namespace WindowsFormsApp1.Views
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
-            // SaveEvent?.Invoke(sender, e);
+            // DialogResult = DialogResult.OK;
+            SaveEvent?.Invoke(sender, e);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -45,11 +45,9 @@
             // lBox_Students
             // 
             this.lBox_Students.FormattingEnabled = true;
-            this.lBox_Students.ItemHeight = 16;
-            this.lBox_Students.Location = new System.Drawing.Point(10, 7);
-            this.lBox_Students.Margin = new System.Windows.Forms.Padding(4);
+            this.lBox_Students.Location = new System.Drawing.Point(8, 6);
             this.lBox_Students.Name = "lBox_Students";
-            this.lBox_Students.Size = new System.Drawing.Size(1205, 420);
+            this.lBox_Students.Size = new System.Drawing.Size(905, 342);
             this.lBox_Students.TabIndex = 0;
             // 
             // btnSearch
@@ -57,10 +55,9 @@
             this.btnSearch.BackColor = System.Drawing.SystemColors.GrayText;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Location = new System.Drawing.Point(1099, 17);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(824, 14);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 22);
+            this.btnSearch.Size = new System.Drawing.Size(75, 20);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -68,10 +65,9 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(13, 17);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(10, 14);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(1078, 22);
+            this.txtSearch.Size = new System.Drawing.Size(810, 20);
             this.txtSearch.TabIndex = 2;
             // 
             // btnREmove
@@ -79,10 +75,9 @@
             this.btnREmove.BackColor = System.Drawing.Color.Brown;
             this.btnREmove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnREmove.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnREmove.Location = new System.Drawing.Point(899, 433);
-            this.btnREmove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnREmove.Location = new System.Drawing.Point(674, 352);
             this.btnREmove.Name = "btnREmove";
-            this.btnREmove.Size = new System.Drawing.Size(100, 32);
+            this.btnREmove.Size = new System.Drawing.Size(75, 26);
             this.btnREmove.TabIndex = 1;
             this.btnREmove.Text = "Remove";
             this.btnREmove.UseVisualStyleBackColor = false;
@@ -93,10 +88,9 @@
             this.btnUpdate.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(1115, 433);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(836, 352);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 26);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -107,10 +101,9 @@
             this.btnAdd.BackColor = System.Drawing.Color.Green;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(1007, 433);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(755, 352);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 32);
+            this.btnAdd.Size = new System.Drawing.Size(75, 26);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -124,11 +117,12 @@
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.33334F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1231, 570);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(921, 466);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // panel1
@@ -136,9 +130,10 @@
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1225, 89);
+            this.panel1.Size = new System.Drawing.Size(917, 73);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -148,20 +143,20 @@
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.lBox_Students);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 98);
+            this.panel2.Location = new System.Drawing.Point(2, 79);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1225, 469);
+            this.panel2.Size = new System.Drawing.Size(917, 385);
             this.panel2.TabIndex = 1;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(600, 300);
-            this.ClientSize = new System.Drawing.Size(1231, 570);
+            this.ClientSize = new System.Drawing.Size(921, 466);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainView";
             this.Text = "MainView";
             this.tableLayoutPanel1.ResumeLayout(false);
