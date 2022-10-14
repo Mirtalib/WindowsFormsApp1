@@ -13,10 +13,12 @@ namespace WindowsFormsApp1.Presenters
     {
         private readonly IMainView mainVeiw = null;
         private readonly IAddView addView;
+        private readonly IUpdateVeiw updateVeiw;
         private readonly BindingSource source;
         private readonly List<Student> Student;
-        public MainPresenters(IMainView mainVeiw, IAddView addView)
+        public MainPresenters(IMainView mainVeiw, IAddView addView , IUpdateVeiw _updateVeiw)
         {
+            updateVeiw = _updateVeiw;
             this.addView = addView;
             this.mainVeiw = mainVeiw;
 
@@ -34,7 +36,33 @@ namespace WindowsFormsApp1.Presenters
             mainVeiw.SearchEvent += MainVeiw_SearchEvent;
             mainVeiw.RemoveEvent += MainVeiw_RemoveEvent;
             mainVeiw.AddEvent += MainVeiw_AddEvent;
-        
+            mainVeiw.UpdateEvent += MainVeiw_UpdateEvent;
+        }
+
+        private void MainVeiw_UpdateEvent(object sender, EventArgs e)
+        {
+            var curret = source.Current;
+
+            if (curret is null)
+            {
+                MessageBox.Show("Choose a Student");
+                return;
+            }
+
+            var result = ((Form)updateVeiw).ShowDialog();
+
+
+            Student Item = curret as Student;
+            if (result == DialogResult.Cancel)
+                return;
+
+            Item.Name = updateVeiw.FirstName;
+            Item.Surname = updateVeiw.LastName;
+            Item.Score = (float)updateVeiw.Score;
+            Item.BrithOfdDate = updateVeiw.DateOfBirth;
+            source[source.IndexOf(curret)] = Item;
+
+            MessageBox.Show("The student has been replaced");
         }
 
         private void MainVeiw_AddEvent(object sender, EventArgs e)
@@ -44,7 +72,7 @@ namespace WindowsFormsApp1.Presenters
             if (result == DialogResult.Cancel)
                 return;
 
-            var student = new Student
+            var student = new Student()
             {
                 Name = addView.Name,
                 Surname = addView.Surname,

@@ -16,8 +16,9 @@ namespace WindowsFormsApp1
             
             IMainView mainVeiw = new MainView();
             IAddView addView = new AddView();
+            IUpdateVeiw updateVeiw = new UpdateView();
 
-            new MainPresenters(mainVeiw , addView);
+            new MainPresenters(mainVeiw , addView , updateVeiw);
             
             Application.Run((Form)mainVeiw);
         }

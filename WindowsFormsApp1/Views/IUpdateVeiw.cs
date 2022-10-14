@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Views
 {
-    public interface IAddView
+    public interface IUpdateVeiw
     {
-
-        string Name { get;}
-        string Surname { get;}
-        decimal Score { get;}
-        DateTime DateTime { get;}
-
+        string FirstName { get; }
+        string LastName { get; }
+        decimal Score { get; }
+        DateTime DateOfBirth { get; }
 
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
-
     }
 }
